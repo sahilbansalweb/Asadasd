@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apology Letter 🥺🙏🙇</title>
+  <link rel="icon" type="image/x-icon" href="/images/apology.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Patrick Hand', cursive;
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: #d35400;
+    }
+
+    .letter-box, .drawing, .song, .final-msg, .response-buttons, .slideshow-container {
+      display: none;
+      animation: fadeIn 1s forwards;
+      margin-top: 2rem;
+      max-width: 600px;
+    }
+
+    .show { display: block; }
+
+    .btn {
+      background-color: #e67e22;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      margin: 0.5rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 90%;
+      max-width: 300px;
+    }
+
+    .btn:hover {
+      background-color: #d35400;
+    }
+
+    .slide {
+      width: 100%;
+      border-radius: 20px;
+      display: none;
+    }
+
+    .lyrics-box {
+      white-space: pre-wrap;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      font-size: 1.1rem;
+      color: #333;
+      margin: 1rem 0;
+    }
+
+    .gif {
+      width: 80%;
+      max-width: 400px;
+      border-radius: 20px;
+    }
+
+    .response-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Apology Letter 💌</h1>
+  <button class="btn" onclick="showLetter()">Click to open it</button>
+
+  <div class="letter-box" id="letter">
+    <p>Dear Sunakshi,<br><br>
+    I never intended to hurt you emotionally or professionally. It truly pains me that I did. You matter to me more than you know.<br><br>
+    Please accept my deepest apologies — I’ve learned from this, and I promise I will never let this happen again.
+    </p>
+    <button class="btn" onclick="showNext(); playMusic();">Click to see something more...</button>
+  </div>
+
+  <div class="slideshow-container" id="slideshow">
+    <h2>Please Watch This Complete 🖼️</h2>
+    <img class="slide" src="images/image1.jpg">
+    <img class="slide" src="images/image2.jpg">
+    <img class="slide" src="images/image3.jpg">
+    <img class="slide" src="images/image4.jpg">
+    <img class="slide" src="images/image5.jpg">
+    <img class="slide" src="images/image6.png">
+    <img class="slide" src="images/image7.jpg">
+    <img class="slide" src="images/image8.png">
+    <img class="slide" src="images/image9.jpg">
+    <img class="slide" src="images/image10.jpg">
+  </div>
+
+  <div class="drawing" id="drawing">
+    <h2>What comes in my dreams 🎨</h2>
+    <img src="images/drawing.jpg" style="width: 100%; border-radius: 20px;" />
+  </div>
+
+  <div class="song" id="song">
+    <h2>My Little Song 🎶</h2>
+    <div class="lyrics-box" id="lyrics-box">
+      Subh utha toh ek sabse phele yaad ayyi 🌅  
+      kya ho sakta hai sunakshi aaj raat ko toh soo payyi 💤  
+      Fir mujhe yaad ayya me hi toh tha jisne uske emotions ko na samjh payya 😞  
+      na feelings ki samjh payya kabhi 💔  
+      Samay manga usne toh uski kadar nahi kar payya 😔  
+      karta raha apna bachpana 👶  
+      Khair me bhi kya kahu 🤷  
+      me kaha hi samjh pata upper wale ki maya ☁️  
+      kese usne mujhe mere sapno me anne wali uss madam ji se milaya 💭  
+      Maffi ke layak wala kaam toh nahi karta hu me 🙏  
+      fir bhi maffi ki iccha rakhta hu ❤️  
+      yaha tak apko sochne ka samay bhi nahi de patta hu ⏳  
+      Aab dil me dard liye bas un pallo ko yaad karta hu 💔  
+      jisme mere liye apka samay hi samay hota tha ⏰  
+      Apke sath bitaye 4 mahine mere 40 saal ki memories bana gaye hai 📖  
+      Mujhe aadat ho gaye hai apke ehsas ke sath ki 💗  
+      apka mere bare me care karne ki 🤗  
+      Mujhe bas apko manana hai apko narajgi ko dur karna hai 😢  
+      Me na janu ki tu meri hai kon 🤔  
+      me hu tera kya me bas jaha jata hu apka hi naam leta hu 📣  
+      meri ankhe kisi aur chehre ko dekhna nahi chahti 👁️  
+      sirf dikhe ek hi chehra  
+      Kaash ye Tuesday kabhi hota hi nahi 💔  
+    </div>
+    <img class="gif" src="images/tenor.gif" alt="Feeling GIF" />
+  </div>
+
+  <div class="final-msg" id="final">
+    <h2>Again... I’m Sorry 🙏</h2>
+    <p>I never meant to hurt your feelings. You truly matter. I will never let this happen again. 🤍</p>
+  </div>
+
+  <div class="response-buttons" id="responses">
+    <form action="https://formspree.io/f/xjkoovvq" method="POST">
+      <input type="hidden" name="response" value="Jao, Maaf Kara 🤗">
+      <button type="submit" class="btn" onclick="logResponse('Jao, Maaf Kara 🤗')">Jao, Maaf Kara 🤗</button>
+    </form>
+    <form action="https://formspree.io/f/xjkoovvq" method="POST">
+      <input type="hidden" name="response" value="Soch Kar Btaungi 🤔">
+      <button type="submit" class="btn" onclick="logResponse('Soch Kar Btaungi 🤔')">Soch Kar Btaungi 🤔</button>
+    </form>
+    <form action="https://formspree.io/f/xjkoovvq" method="POST">
+      <input type="hidden" name="response" value="Shhhhhhhhhhhh 🤫">
+      <button type="submit" class="btn" onclick="logResponse('Shhhhhhh 🤫')">Shhhhhhhhhhhh 🤫</button>
+    </form>
+  </div>
+
+  <audio id="bg-music" src="images/backgroundsong.mp3"></audio>
+
+  <script>
+    let slideIndex = 0;
+    function showLetter() {
+      document.getElementById('letter').classList.add('show');
+    }
+
+    function showNext() {
+      document.getElementById('slideshow').style.display = 'block';
+      showSlides();
+      setTimeout(() => document.getElementById('drawing').style.display = 'block', 10000);
+      setTimeout(() => document.getElementById('song').style.display = 'block', 20000);
+      setTimeout(() => document.getElementById('final').style.display = 'block', 30000);
+      setTimeout(() => document.getElementById('responses').style.display = 'flex', 35000);
+    }
+
+    function playMusic() {
+      const music = document.getElementById("bg-music");
+      music.play();
+    }
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("slide");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1; }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 1200);
+    }
+
+    function logResponse(option) {
+      console.log("User selected: " + option);
+    }
+  </script>
+
+</body>
+</html>
